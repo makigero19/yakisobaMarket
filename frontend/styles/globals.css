@@ -1,0 +1,8 @@
+body,html{
+  margin:0;
+  padding:0;
+}
+:root{
+  --colorOne:#ffa600d2;
+  --colorTwo:#cc6045d2;
+}
