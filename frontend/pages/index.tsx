@@ -1,12 +1,15 @@
-import { Layout } from "@/components"
+import { Layout, Banner } from "@/components"
+
+import styles from '../styles/Home.module.css'
+
 export default function Home() {
   return (
     <>
       <Layout title="home">
-       <div>
-        <h2>welcome!</h2>
-       </div>
-       
+        <>       
+        <Banner />
+        </>
+
       </Layout>
     </>
   )

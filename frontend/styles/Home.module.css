@@ -1,3 +1,4 @@
+/*header*/
 .header {
     background: var(--colorOne);
     color: var(--colorFont);
@@ -7,6 +8,20 @@
     justify-content: space-between;
 }
 
+
+.floatbox {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding: 0;
+    margin: 0;
+}
+.floatbox img{
+    transition: 0.1s linear;
+}
+.floatbox:hover img{
+    transform:scaleY(1.2)
+}
 .menu ul {
     display: flex;
 }
@@ -16,28 +31,53 @@
     list-style: none;
     text-decoration: none;
 }
-.search{
-width: 40%;
+
+.search {
+    width: 50%;
 }
-.search form{
+
+.search form {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    background:#fff;
+    background: #fff;
     padding: 2px;
     border-radius: 5px;
-height: 40px;
-justify-content: space-between;
+    height: 40px;
+    justify-content: space-between;
 }
 
-.search form input{
-    border:none;
+.search form input {
+    border: none;
     width: 91%;
     height: 100%;
     font-size: 16px;
 }
-.search form button{
-width: 40px;
-height: 40px;
 
+.search form button {
+    width: 40px;
+    height: 40px;
+
+}
+/*section*/
+.content,.banner{
+    background:var(--colorContent);
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 10px;
+    transition: 0.5s linear;   
+}
+.banner{
+    min-height: 300px;
+    background-size:cover;
+    background-position-y: 50%;
+    position:relative
+}
+.banner h2{
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+    text-shadow: 2px 2px var(--colorFont);
+    z-index: 100!important;
 }

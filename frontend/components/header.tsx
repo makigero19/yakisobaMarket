@@ -1,8 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from '../styles/Home.module.css'
+import Image from "next/image";
+
 import Menu from "./menu";
 import Search from "./search";
+
+import styles from '../styles/Home.module.css'
+import logo from '../public/logo.png'
 
 export default function ({ title }: { title: string }) {
     return <>
@@ -16,7 +20,9 @@ export default function ({ title }: { title: string }) {
         </Head>
         <header className={styles.header}>
             <div>
-                <Link href="/"><h1>yakisoba market</h1></Link>
+                <Link href="/" className={styles.floatbox}>
+                    <Image src={logo} alt="logo" width={50} height={50}/>
+                    <h1>yakisoba market</h1></Link>
             </div>
             <Search/>
             <Menu/>

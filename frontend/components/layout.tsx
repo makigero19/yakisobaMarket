@@ -1,5 +1,7 @@
 import Header from "./header"
 
+
+
 export default function ({
     title,
     children }: {
@@ -9,6 +11,8 @@ export default function ({
 
     return <>
         <Header title={title} />
+        
         {children}
+     
     </>
 }
