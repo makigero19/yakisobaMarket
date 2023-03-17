@@ -1,9 +1,13 @@
-import Header from '../components/header'
+import { Layout } from "@/components"
 export default function Home() {
   return (
     <>
-    <Header title='home page'></Header>
-    <p>hihihi</p>
+      <Layout title="home">
+       <div>
+        <h2>welcome!</h2>
+       </div>
+       
+      </Layout>
     </>
   )
 }

@@ -1,0 +1,43 @@
+.header {
+    background: var(--colorOne);
+    color: var(--colorFont);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+.search{
+width: 40%;
+}
+.search form{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    background:#fff;
+    padding: 2px;
+    border-radius: 5px;
+height: 40px;
+justify-content: space-between;
+}
+
+.search form input{
+    border:none;
+    width: 91%;
+    height: 100%;
+    font-size: 16px;
+}
+.search form button{
+width: 40px;
+height: 40px;
+
+}
