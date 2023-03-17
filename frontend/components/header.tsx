@@ -12,8 +12,7 @@ export default function ({ title }: { title: string }) {
             <meta name="keywords" content="yakisoba, ramen" />
             <meta name="author" content="Meu Nome" />
             <link rel="icon" href="/caminho/do/icon.ico" />
-            <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"/>
-
+          
         </Head>
         <header className={styles.header}>
             <div>
