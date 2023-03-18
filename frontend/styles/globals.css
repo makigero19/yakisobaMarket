@@ -11,9 +11,11 @@
   --colorOne: #e9b34e;
   --colorTwo: #d36235;
   --colorFont: #975135;
+  --colorInfo: #926e50a9;
   --colorLink: #fffddb;
   --colorTexture: #fcf1da;
   --colorContent:#fff;
+  --colorProduct: #fae4c8;
 }
 
 body {

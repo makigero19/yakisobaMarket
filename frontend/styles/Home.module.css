@@ -16,12 +16,15 @@
     padding: 0;
     margin: 0;
 }
-.floatbox img{
+
+.floatbox img {
     transition: 0.1s linear;
 }
-.floatbox:hover img{
-    transform:scaleY(1.2)
+
+.floatbox:hover img {
+    transform: scaleY(1.2)
 }
+
 .menu ul {
     display: flex;
 }
@@ -59,25 +62,86 @@
     height: 40px;
 
 }
+
 /*section*/
-.content,.banner{
-    background:var(--colorContent);
+.content,
+.banner {
+    background: var(--colorContent);
     margin: 5px;
     box-sizing: border-box;
     padding: 4px;
     border-radius: 10px;
-    transition: 0.5s linear;   
+
 }
-.banner{
+
+.content {
+    display: flex;
+}
+
+.product {
+    width: 25%;
+    margin: 10px;
+    background: var(--colorProduct);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: var(--colorFont);
+    overflow: hidden;
+    transition: 0.5s linear;
+    position: relative;
+}
+
+.product::after {
+    content:" ";
+    position:absolute;
+    color:#fff;
+    top:0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s linear;
+}
+
+
+.product img {
+    width: 100%;
+    transition: 0.2s linear;
+}
+
+.product span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product svg {
+    width: 12px;
+}
+.product:hover {
+    transform: rotate(3deg);
+    cursor: pointer
+}
+.product:hover img {
+    margin: auto;
+    transform: scale(2)
+}
+.product:hover::after{
+    background:var(--colorInfo);
+    content: attr(data-resume);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.banner {
     min-height: 300px;
-    background-size:cover;
+    background-size: cover;
     background-position-y: 50%;
-    position:relative
+    position: relative;
+    transition: 0.5s ease-out;
 }
-.banner h2{
+
+.banner h2 {
     text-align: center;
     color: #fff;
     font-size: 42px;
     text-shadow: 2px 2px var(--colorFont);
-    z-index: 100!important;
+    z-index: 100 !important;
 }
