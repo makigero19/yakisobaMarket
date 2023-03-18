@@ -8,6 +8,7 @@ export default function Home() {
       <Layout title="home">
         <>       
         <Banner />
+        
         </>
 
       </Layout>
